@@ -1,10 +1,11 @@
+import './Exchanges.css'
 const Exchanges = (props) => {
     return ( 
         <div className='exchange-container'>
             <div className='exchange-row'>
                 <div className='exchange'>
                     <img alt={props.name} src={props.logo}/>
-                    <h3><a href={props.url}>{props.name}</a></h3>
+                    <h1><a href={props.url}>{props.name}</a></h1>
                     
                 </div>
                 <div className='exchange-info'>

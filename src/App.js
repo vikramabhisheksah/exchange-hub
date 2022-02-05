@@ -3,6 +3,7 @@ import axios from 'axios';
 import Navbar from "./Navbar";
 import Home from "./Home"
 
+
 function App() {
   const [exchanges, setExchanges] = useState([]);
 
