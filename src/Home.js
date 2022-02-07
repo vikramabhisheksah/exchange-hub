@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Exchanges from "./Exchanges";
 
+//Home component, includes a search bar along with the exchange list
 const Home = (props) => {
   const [search_qry, setSearchQry] = useState("");
 
@@ -26,9 +27,6 @@ const Home = (props) => {
             className="exchange-input"
           />
         </form>
-        {/* {console.log(filteredExchanges)} */}
-        {/* {console.log(props.exchanges)} */}
-        {/* {filteredExchanges.map(exchange=>console.log(exchange.id))} */}
       </div>
 
       {filteredExchanges.map((exchange) => (
@@ -36,7 +34,6 @@ const Home = (props) => {
           to={`/exchange/${exchange.id}`}
           state={{ exchange: exchange }}
           key={exchange.id}
-          id="RouterNavLink"
           className={"links"}
         >
           <Exchanges

@@ -14,6 +14,7 @@ function App() {
   const [exchanges, setExchanges] = useState([]);
 
   useEffect(() => {
+    //Fetching the data on component mount
     axios
       .get("https://api.coingecko.com/api/v3/exchanges?per_page=10")
       .then((res) => {

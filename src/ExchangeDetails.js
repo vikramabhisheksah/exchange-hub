@@ -1,13 +1,13 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import "./ExchangeDetails.css";
 
+//Component for rendering details for each exchange
 const ExchangeDetails = () => {
   const location = useLocation();
   const exchange = location.state.exchange;
 
   let navigate = useNavigate();
 
-  //   console.log(exchange);
   return (
     <div className="content">
       <div className="exchange-logo">

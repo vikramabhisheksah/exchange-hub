@@ -3,7 +3,7 @@
 /* base styles */
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand";
   color: #333;
@@ -43,13 +43,10 @@
 .exchange-input {
   width: 100%;
   padding: 12px 20px;
-  
+
   font-size: 16px;
 }
 
 .links {
   text-decoration: none;
-  position: relative;
-  z-index: 1;
 }
-
