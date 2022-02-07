@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes,Navigate } from "react-router-dom";
 import axios from "axios";
 import Navbar from "./Navbar";
 import Home from "./Home";
@@ -24,13 +24,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home exchanges={exchanges}/>}/>
-        <Route path="/exchange/:Id" element={<ExchangeDetails/>}/>
-      </Routes>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home exchanges={exchanges} />} />
+          <Route path="/exchange/:Id" element={<ExchangeDetails />} />
+          <Route path="/*" element={<Navigate to="/"/>}/> 
+          {/* Above line exploits advanced route picking algorithm of the react-router-dom v6 */}
+        </Routes>
       </Router>
-      
     </div>
   );
 }

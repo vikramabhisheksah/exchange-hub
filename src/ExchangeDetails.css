@@ -1,0 +1,28 @@
+.exchange-logo img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.exchange-name h1{
+    margin-bottom: 20px;
+}
+
+.exchange-details {
+    margin-bottom: 20px;
+}
+.exchange-details p{
+    margin-bottom: 10px;
+}
+
+.button-back{
+    background-color:#f1356d;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.button-back:hover{
+    background-color: #753649;
+}

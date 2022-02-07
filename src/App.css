@@ -33,3 +33,17 @@
   margin: 40px auto;
   padding: 20px;
 }
+
+.exchange-search h2{
+  margin-bottom: 20px;
+}
+
+.exchange-input {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.links{
+  text-decoration: none;
+}
