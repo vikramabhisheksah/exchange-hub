@@ -3,6 +3,8 @@
 /* base styles */
 * {
   margin: 0;
+  padding:0;
+  box-sizing: border-box;
   font-family: "Quicksand";
   color: #333;
 }
@@ -31,7 +33,7 @@
 .content {
   max-width: 600px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 24px;
 }
 
 .exchange-search h2 {
@@ -41,9 +43,13 @@
 .exchange-input {
   width: 100%;
   padding: 12px 20px;
-  box-sizing: border-box;
+  
   font-size: 16px;
 }
+
 .links {
   text-decoration: none;
+  position: relative;
+  z-index: 1;
 }
+
