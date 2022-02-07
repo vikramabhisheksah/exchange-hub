@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /* base styles */
 * {
@@ -34,7 +34,7 @@
   padding: 20px;
 }
 
-.exchange-search h2{
+.exchange-search h2 {
   margin-bottom: 20px;
 }
 
@@ -44,6 +44,6 @@
   box-sizing: border-box;
   font-size: 16px;
 }
-.links{
+.links {
   text-decoration: none;
 }

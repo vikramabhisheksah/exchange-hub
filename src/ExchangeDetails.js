@@ -1,13 +1,13 @@
-import { useLocation,useNavigate } from "react-router-dom";
-import './ExchangeDetails.css'
+import { useLocation, useNavigate } from "react-router-dom";
+import "./ExchangeDetails.css";
 
 const ExchangeDetails = () => {
-  const location = useLocation()
-  const exchange = location.state.exchange
+  const location = useLocation();
+  const exchange = location.state.exchange;
 
-  let navigate = useNavigate()
+  let navigate = useNavigate();
 
-//   console.log(exchange);
+  //   console.log(exchange);
   return (
     <div className="content">
       <div className="exchange-logo">
@@ -21,19 +21,23 @@ const ExchangeDetails = () => {
       </div>
 
       <div className="exchange-details">
-        <p className='trade-vol'>
+        <p className="trade-vol">
           Trade Volume:{" "}
           {exchange.trade_volume_24h_btc.toLocaleString(undefined, {
             maximumFractionDigits: 2,
           })}
         </p>
-        <p className='trust-score'>Trust Score: {exchange.trust_score}</p>
-        <p className='trust-score-rank'>Trust Score Rank: {exchange.trust_score_rank}</p>
-        <p className='exchange-country'>Country: {exchange.country}</p>
-        <p className='exchange-year'>Year: {exchange.year_established}</p>
+        <p className="trust-score">Trust Score: {exchange.trust_score}</p>
+        <p className="trust-score-rank">
+          Trust Score Rank: {exchange.trust_score_rank}
+        </p>
+        <p className="exchange-country">Country: {exchange.country}</p>
+        <p className="exchange-year">Year: {exchange.year_established}</p>
       </div>
 
-      <button className="button-back" onClick={()=>navigate('/')}>Back To Home</button>
+      <button className="button-back" onClick={() => navigate("/")}>
+        Back To Home
+      </button>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Home = (props) => {
   const handleChange = (e) => {
     setSearchQry(e.target.value);
   };
-  
+
   const filteredExchanges = search_qry
     ? props.exchanges.filter((exchange) =>
         exchange.name.toLowerCase().includes(search_qry.toLowerCase())
@@ -34,10 +34,10 @@ const Home = (props) => {
       {filteredExchanges.map((exchange) => (
         <Link
           to={`/exchange/${exchange.id}`}
-            state={{exchange: exchange}}
-            key = {exchange.id}
-            id="RouterNavLink"
-            className={'links'}
+          state={{ exchange: exchange }}
+          key={exchange.id}
+          id="RouterNavLink"
+          className={"links"}
         >
           <Exchanges
             key={exchange.id}

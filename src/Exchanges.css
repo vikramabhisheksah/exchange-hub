@@ -1,4 +1,3 @@
-
 .exchange-container {
   display: flex;
   justify-content: center;
@@ -14,7 +13,7 @@
   width: 900px;
 }
 
-.exchange-row:hover{
+.exchange-row:hover {
   background-color: whitesmoke;
 }
 
@@ -46,5 +45,5 @@
 }
 
 .exchange-country {
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
+}
