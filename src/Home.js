@@ -25,6 +25,7 @@ const Home = (props) => {
             placeholder="search"
             onChange={handleChange}
             className="exchange-input"
+            id="exchange-search"
           />
         </form>
       </div>
